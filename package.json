@@ -1,15 +1,20 @@
 {
   "name": "karina-website",
   "version": "0.1.0",
+  "homepage": "https://tosaret.github.io/mdl",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "classnames": "^2.3.1",
+    "gh-pages": "^4.0.0",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
