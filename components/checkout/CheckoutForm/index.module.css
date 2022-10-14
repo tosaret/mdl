@@ -1,0 +1,69 @@
+.checkoutForm {
+  padding: 60px 16px;
+  background: linear-gradient(
+      267.96deg,
+      rgba(217, 203, 235, 0.2) 0%,
+      rgba(224, 220, 228, 0.2) 51.72%
+    ),
+    linear-gradient(272.04deg, #ba99e4 48.28%, #ded2ec 100%);
+}
+
+.container {
+  max-width: 1282px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  width: 100%;
+  max-width: 488px;
+  margin: 0 20px 0 0;
+  color: #171612;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 117px 0 0;
+}
+
+.text h4 {
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 51px;
+  margin: 0 0 28px;
+}
+
+.text ul,
+.text li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.text li {
+  padding: 4px 0 4px 28px;
+  background: url(../../../public/icons/checkmark.svg) left center no-repeat;
+}
+
+@media screen and (max-width: 949px) {
+  .checkoutForm {
+    padding: 30px 16px;
+  }
+  .container {
+    display: block;
+  }
+  .text {
+    padding: 0;
+    margin: 0 auto 30px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .text h4 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 10px;
+  }
+  .text li {
+    background-size: 16px;
+  }
+}

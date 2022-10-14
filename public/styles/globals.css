@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Della+Respira&family=Junge&family=Poppins:wght@800&family=Questrial&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #171612;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #efefed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

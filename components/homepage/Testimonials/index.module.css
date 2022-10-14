@@ -1,0 +1,52 @@
+.testimonials {
+  margin: 0 0 162px;
+  overflow: hidden;
+}
+
+.testimonials h2 {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 50px;
+  color: #ab70f5;
+  text-align: center;
+  margin: 41px 0 0;
+}
+
+.testimonials h3 {
+  font-family: "Junge";
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 47px;
+  color: #efefed;
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.sliderItem {
+  height: 250px;
+  display: flex !important;
+  align-items: center;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 949px) {
+  .testimonials {
+    margin: 0 0 40px;
+  }
+  .testimonials h2 {
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 29px;
+    max-width: 250px;
+  }
+  .testimonials h3 {
+    margin: 0 auto 12px;
+    font-size: 28px;
+    line-height: 34px;
+    max-width: 250px;
+  }
+  .sliderItem {
+    height: 80px;
+  }
+}

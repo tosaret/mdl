@@ -1,0 +1,52 @@
+.followers {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(
+      267.96deg,
+      rgba(210, 188, 238, 0.2) 0%,
+      rgba(119, 25, 239, 0.2) 51.72%
+    ),
+    linear-gradient(272.04deg, #ba94eb 48.28%, #e6dcf2 100%);
+
+  color: #171612;
+  text-align: center;
+}
+
+.container {
+  background: url(../../../public/images/followers-bg1.png) -200% center no-repeat,
+    url(../../../public/images/followers-bg2.png) 355% center no-repeat;
+  padding: 42px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.count {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.mobileButtons {
+  display: none;
+}
+
+@media screen and (max-width: 949px) {
+  .container {
+    display: block;
+    padding: 4px 0 12px;
+  }
+  .count {
+    margin-top: 8px;
+  }
+  .mobileButtons {
+    display: block;
+    margin: 12px 0;
+  }
+  .mobileButtons button {
+    display: block;
+    margin: 10px auto;
+  }
+}

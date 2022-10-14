@@ -1,0 +1,75 @@
+.ladies {
+  padding: 80px 0 0;
+  background: url(../../../public/icons/curve1.svg) left -800px top 23% no-repeat,
+    url(../../../public/icons/curve2.svg) right -750px top 40% no-repeat;
+}
+
+.container {
+  max-width: 826px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.ladies h2 {
+  font-family: "Junge", serif;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+.ladies hr {
+  width: 238px;
+  height: 4px;
+  background: linear-gradient(89.99deg, #a58158 15.34%, #f0e1d0 108.82%);
+  border: none;
+  margin: 0 auto 40px;
+}
+
+.ladies h4 {
+  font-family: "Questrial", sans-serif;
+  font-size: 25px;
+  line-height: 160%;
+}
+
+.ladies p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 0 31px;
+}
+
+.images {
+  margin: 0 -77px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.images > * {
+  margin: 0 6px !important;
+}
+
+@media screen and (max-width: 949px) {
+  .ladies {
+    padding: 40px 0 0;
+  }
+  .ladies h2 {
+    font-size: 28px;
+  }
+  .ladies hr {
+    margin: 0 auto 12px;
+  }
+  .ladies h4 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .ladies p {
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0 0 16px;
+  }
+  .images {
+    margin: 0 -6px;
+  }
+}

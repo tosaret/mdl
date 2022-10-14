@@ -1,0 +1,45 @@
+.video {
+  padding: 80px 0 27px;
+}
+
+.container {
+  max-width: 1026px;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Junge";
+  font-size: 49px;
+  line-height: 49px;
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+.title span {
+  font-family: "Questrial", sans-serif;
+  color: #ab70f5;
+}
+
+.videoRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.videoRow a {
+  margin: 7px 8px;
+}
+
+@media screen and (max-width: 949px) {
+  .video {
+    padding: 27px 0 12px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 12px;
+  }
+  .videoRow a {
+    margin: 0 3px;
+  }
+}

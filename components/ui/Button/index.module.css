@@ -1,0 +1,24 @@
+.btn {
+  background: #ab70f5;
+  padding: 8px 20px;
+  margin: 0 12px 0 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #efefed;
+  text-transform: uppercase;
+  border: 1px solid #ab70f5;
+  cursor: pointer;
+}
+
+.btn:focus,
+.btn:hover {
+  background: #171612;
+  color: #efefed;
+}
+
+.secondary {
+  background: #171612;
+  color: #ab70f5;
+}

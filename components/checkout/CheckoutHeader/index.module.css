@@ -1,0 +1,44 @@
+.checkoutHeader {
+  text-align: center;
+  padding: 52px 0 80px;
+}
+
+.checkoutHeader h2 {
+  font-family: "Junge", serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.checkoutHeader h3 {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #ab70f5;
+  margin: 0;
+}
+
+.checkoutHeader p {
+  font-size: 25px;
+  line-height: 33px;
+  max-width: 800px;
+  margin: 12px auto 0;
+}
+
+@media screen and (max-width: 949px) {
+  .checkoutHeader {
+    padding: 32px 0 40px;
+  }
+  .checkoutHeader h2,
+  .checkoutHeader h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .checkoutHeader p {
+    font-size: 13px;
+    line-height: 17px;
+    max-width: 300px;
+  }
+}

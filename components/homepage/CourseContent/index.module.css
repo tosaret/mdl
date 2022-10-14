@@ -1,0 +1,55 @@
+.course {
+  background: url(../../../public/icons/curve1.svg) left -850px top 75px no-repeat,
+    url(../../../public/icons/curve2.svg) right -850px top 0% no-repeat;
+}
+
+.container {
+  max-width: 994px;
+  margin: 0 auto 42px;
+  padding: 24px;
+  background: #22211b;
+}
+
+.title {
+  padding: 0 0 0 24px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 50px;
+  padding: 0 24px;
+}
+
+.header a {
+  cursor: pointer;
+  color: #ab70f5;
+}
+
+.header span {
+  color: #ab70f5;
+  margin: 0 4px;
+}
+
+@media screen and (max-width: 949px) {
+  .container {
+    padding: 8px 12px;
+  }
+  .title {
+    padding: 8px 0 0 8px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .header {
+    padding: 5px 8px 10px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}

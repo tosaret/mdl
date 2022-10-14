@@ -1,0 +1,272 @@
+.form {
+  width: 100%;
+  max-width: 774px;
+  padding: 24px;
+  background: #22211b;
+  border-radius: 4px;
+}
+
+.groupName {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 0 24px;
+  margin: 0 0 4px;
+}
+
+.groupNameCredit {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.groupNameSummary {
+  margin: 21px 0 0;
+}
+
+.creditCard {
+  float: left;
+  margin: 4px 0 0 4px;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.formInput {
+  margin: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.formRow input {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background: #2b2b2b;
+  border-radius: 4px;
+  border: 1px solid #2b2b2b;
+  padding: 0 0 0 14px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  transition: padding 200ms ease-in;
+}
+
+.formRow input:not(:placeholder-shown) {
+  outline: none;
+  border-bottom: 1px solid #2b2b2b;
+  padding: 22px 0 0 14px;
+}
+
+.formRow input:focus {
+  outline: none;
+  border-bottom: 1px solid #c1a5e5;
+  padding: 22px 0 0 14px;
+}
+
+.formRow :global input.error {
+  border-bottom-color: #ff170a;
+}
+
+.formRow label {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  top: -20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #d3c2e8;
+  transition: all 200ms ease-in;
+}
+
+.formRow input:not(:placeholder-shown) ~ label,
+.formRow input:focus ~ label {
+  opacity: 1;
+  top: 9px;
+}
+
+.formRow :global input.error ~ label {
+  color: #ff170a;
+}
+
+.formSelect {
+  overflow: initial;
+  margin: 4px 4px 24px;
+}
+
+.formSelect :global .select-search__value {
+  background: #2b2b2b;
+  border-radius: 4px;
+}
+
+.formSelect :global .select-search input {
+  padding: 0 0 0 14px;
+  background: url(../../../../public/icons/arrow-down.svg) right 14px center
+    no-repeat;
+  background-size: 30px 15px;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+}
+
+.formSelect :global .select-search input:focus {
+  padding: 0 0 0 35px;
+  background: url(../../../../public/icons/arrow-down.svg) right 14px center
+      no-repeat,
+    url(../../../../public/icons/search.svg) left 10px center no-repeat;
+  background-size: 30px 15px, 15px;
+}
+
+.formSelect :global .select-search input::placeholder {
+  color: #efefed;
+}
+
+.formSelect :global .select-search__select {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 54px;
+  width: 100%;
+  height: 165px;
+  overflow-y: scroll;
+  background: #2b2b2b;
+  border-right: 4px solid #2b2b2b;
+  border-radius: 0px 0px 4px 4px;
+  padding: 0 12px;
+}
+
+.formSelect :global .select-search__select::-webkit-scrollbar {
+  width: 2px;
+}
+
+.formSelect :global .select-search__select::-webkit-scrollbar-thumb {
+  background: #d3c2e8;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.formSelect :global .select-search__select ul,
+.formSelect :global .select-search__select li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.formSelect :global .select-search__select ul {
+  margin: 8px 0;
+}
+
+.formSelect :global .select-search__select ul:before {
+  content: "Countries";
+  display: block;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.078px;
+
+  color: #7a7a7a;
+}
+
+.formSelect :global .select-search__select button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 2px 0;
+  font-weight: 500;
+  font-size: 13px;
+  height: 18px;
+  line-height: 18px;
+  color: #efefed;
+  text-align: left;
+  cursor: pointer;
+}
+
+.clearIcon {
+  opacity: 0;
+  position: absolute;
+  right: 14px;
+  bottom: 7px;
+  width: 19px;
+  height: 19px;
+  background: #d3c2e8;
+  border-radius: 19px;
+  color: #2b2b2b;
+  font-size: 21px;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.formRow input:not(:placeholder-shown):focus ~ .clearIcon {
+  opacity: 1;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 24px;
+}
+
+.summaryRow div:last-child {
+  text-align: right;
+}
+
+.form button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 16px 0 0;
+  text-transform: none;
+}
+
+@media screen and (max-width: 949px) {
+  .form {
+    margin: 0 auto;
+    padding: 16px;
+  }
+  .formRow {
+    padding: 0;
+  }
+  .formRow input {
+    height: 46px;
+    font-size: 12px;
+  }
+  .formRow label {
+    font-size: 12px;
+  }
+  .formRow input:not(:placeholder-shown),
+  .formRow input:focus {
+    padding: 16px 0 0 14px;
+  }
+  .formRow input:not(:placeholder-shown) ~ label,
+  .formRow input:focus ~ label {
+    top: 5px;
+  }
+  .groupName {
+    padding: 0;
+    margin: 0 0 10px 5px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .groupNameSummary {
+    margin: 21px 0 0;
+  }
+  .creditCard {
+    margin: 0 4px 0 0;
+    width: 14px;
+    height: 14px;
+  }
+  .summaryRow {
+    padding: 5px 0;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .form button {
+    font-size: 16px;
+  }
+}

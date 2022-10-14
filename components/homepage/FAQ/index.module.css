@@ -1,0 +1,81 @@
+.faq {
+  background: linear-gradient(
+      267.96deg,
+      rgba(217, 203, 235, 0.2) 0%,
+      rgba(224, 220, 228, 0.2) 51.72%
+    ),
+    linear-gradient(272.04deg, #ba99e4 48.28%, #ded2ec 100%);
+
+  color: #171612;
+  padding: 80px 0 50px;
+  margin: 120px 0 0;
+}
+
+.faqBg {
+  background: url(../../../public/icons/curve1.svg) left -650px top 10% no-repeat,
+    url(../../../public/icons/curve2.svg) right -750px top 10% no-repeat;
+}
+
+.container {
+  max-width: 826px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.faq h2 {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+.faq hr {
+  width: 238px;
+  height: 4px;
+  background: linear-gradient(89.99deg, #a58158 15.34%, #f0e1d0 108.82%);
+  border: none;
+  margin: 0 auto 46px;
+}
+
+.item {
+  margin: 0 0 40px;
+}
+
+.question {
+  background: url(../../../public/icons/questionmark.png) left center no-repeat;
+  background-size: 25px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0 0 16px;
+  padding: 0 0 0 43px;
+  letter-spacing: 1px;
+}
+
+.answer {
+  font-size: 18px;
+  line-height: 31px;
+}
+
+@media screen and (max-width: 949px) {
+  .faq {
+    margin: 40px 0 0;
+    padding: 40px 0 28px;
+  }
+  .item {
+    margin: 0 0 12px;
+  }
+  .question {
+    background-size: 14px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 8px;
+    padding: 0 0 0 27px;
+  }
+  .answer {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}

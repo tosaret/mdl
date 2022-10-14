@@ -1,0 +1,107 @@
+.hero {
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  min-height: 931px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroTexts {
+  max-width: 634px;
+  position: relative;
+  z-index: 2;
+}
+
+.by {
+  font-family: "Junge", serif;
+  padding: 146px 0 0;
+}
+
+.title {
+  font-family: "Junge", serif;
+  font-size: 60px;
+  line-height: 57px;
+}
+
+.title span {
+  font-family: "Della Respira", serif;
+  color: #ab70f5;
+  letter-spacing: 1.5px;
+}
+
+.text {
+  font-size: 20px;
+  margin: 12px 0;
+  padding: 0 110px 0 0;
+}
+
+.heroImageBg {
+  background: url(../../../public/images/hero-bg.png) center no-repeat;
+  background-size: 100%;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  right: -180px;
+  bottom: -176px;
+}
+
+.heroImage {
+  position: absolute;
+  right: -40px;
+  bottom: -157px;
+}
+
+.heroImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 949px) {
+  .hero {
+    text-align: center;
+    padding: 0;
+  }
+  .container {
+    min-height: 300px;
+  }
+  .heroTexts {
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .by {
+    padding: 16px 0 0;
+    font-size: 12px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .text {
+    padding: 0 50px;
+    font-size: 13px;
+    margin: 12px 0 0;
+  }
+  .heroImageBg {
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    background-size: 333px;
+    height: 333px;
+    width: 100%;
+  }
+  .heroImage {
+    position: relative;
+    bottom: -40px;
+    left: 50%;
+    right: 0;
+    width: 260px;
+    margin-left: -150px;
+  }
+  .heroTexts button {
+    display: none;
+  }
+}
